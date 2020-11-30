@@ -1,21 +1,36 @@
-/*---------------------------header---------------------------*/
-.container{
+#menu-container{
     width: 100%;
-    padding: 0 11%;
+    padding: 0 7%;
     background-color: white;
     height: 100px;
     box-shadow: 0px 1px 5px;
 }
-.container #menu ul{
+#menu-container #menu>ul{
 
     height: 100px;
     line-height: 100px;
 }
-.container #menu ul li a{
+#menu-container #menu>ul>li>a{
     height: 100px;
     line-height: 70px;
     color:black;
     font-size: 25px;
+    text-align: center;
+}
+#menu-container #menu>ul>li>#QL-Kho{
+    width: 265px;
+}
+#menu-container #menu>ul>li>#QLKD{
+    width: 297px;
+}
+#menu-container #menu>ul>li>ul>li>a{
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+}
+#menu-container #menu>ul>li>#dropdown_xuong>li>a{
+    width: 210px;
 }
 
 /*---------------------------main---------------------------*/
@@ -37,30 +52,30 @@ footer{
     padding-top: 35px;
     color:#FFFFFF;
 }
-footer .container1 .row #footer-col-1 h5{
+footer #footer-container .row #footer-col-1 h5{
     font-size: 30px;
 }
-footer .container1 .row #footer-col-1 ul li{
+footer #footer-container .row #footer-col-1 ul li{
     list-style-type: none;
 }
-footer .container1 .row #footer-col-2 img{
+footer #footer-container .row #footer-col-2 img{
     margin:10% 5%;
     width: 50%;
 }
-footer .container1 .row #footer-col-3 .social-networks ul li{
+footer #footer-container .row #footer-col-3 .social-networks ul li{
     list-style-type: none;
     display: inline-block;
 }
-footer .container1 .row #footer-col-3 .social-networks ul li a .fa{
+footer #footer-container .row #footer-col-3 .social-networks ul li a .fa{
     margin-right: 20px;
     color: white;
     font-size: 30px;
 }
-footer .container1 .row #footer-col-3 #footer-col-3__row-1 ul li{
+footer #footer-container .row #footer-col-3 #footer-col-3__row-1 ul li{
     list-style-type: none;
     display: inline-block;
     padding:0 10px 5px 0 ;
 }
-footer .container1 .row #footer-col-3 #footer-col-3__row-1 ul li a{
+footer #footer-container .row #footer-col-3 #footer-col-3__row-1 ul li a{
     color:white;
 }
