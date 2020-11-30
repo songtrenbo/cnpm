@@ -24,11 +24,11 @@
 		<nav class="navbar  navbar-fixed-top">
 			<div class="container" id="menu-container">
 			  <div class="navbar-header">
-				<a class="navbar-brand" href="#"> <img src="./picture/FastLeopard.png" alt=""></a>
+				<a class="navbar-brand" href="TrangChu.html"> <img src="./picture/FastLeopard.png" alt=""></a>
 			  </div>
 			  <div id="menu" class="collapse navbar-collapse navbar-right">
 				<ul class="nav navbar-nav">
-				  	<li><a href="#">Trang chủ</a></li>
+				  	<li><a href="TrangChu.html">Trang chủ</a></li>
 
 				  	<li class="dropdown">
 						<a href="QLKho.html" id="QL-Kho">Quản lý kho</span></a>
@@ -45,7 +45,16 @@
 							<li><a href="QLKD.html">Danh sách hóa đơn sửa ô tô</a></li>
 							<li><a href="DichVu.html">Dịch vụ</a></li>
 						</ul>
-					</li>						
+                    </li>	
+                    <li class="dropdown">
+                        <a data-toggle="dropdown" href="#"><i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
+                        <ul class="dropdown-menu navbar-left">					 
+							<li><a data-toggle="modal" data-target="#myModal" href="">Đăng nhập</a></li>
+                            <li><a href="BaoCao.html">Báo cáo</a></li>
+                            <li><a href="TaiKhoan.html">Danh sách tài khoản</a></li>
+                            <li><a href="DichVu.html">Danh sách quy định</a></li>
+						</ul>
+                    </li>				
 				</ul>
 			  </div><!--/.nav-collapse -->
 			</div>
@@ -109,21 +118,6 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
-		
-<script>
-
-	// $(document).ready(function() {
-	// 	$('.navbar a.dropdown-toggle').on('click', function(e) {
-	// 	   var $el = $(this);
-	// 	   var $parent = $(this).offsetParent(".dropdown-menu");
-	// 	   $(this).parent("li").toggleClass('open');
-	// 	   if(!$parent.parent().hasClass('nav')) {
-	// 			$el.next().css({"top": $el[0].offsetTop, "left": $parent.outerWidth() - 4});
-	// 	   }
-	// 	   $('.nav li.open').not($(this).parents("li")).removeClass("open");
-	// 	   return false;
-	// 	  });
-	//   });
-</script>
+	<script src="./js/Dang-nhap.js"></script>
 </body>
 </html>

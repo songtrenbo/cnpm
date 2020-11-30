@@ -1,6 +1,7 @@
+/*---------------------------header---------------------------*/
 #menu-container{
     width: 100%;
-    padding: 0 7%;
+    padding: 0 3%;
     background-color: white;
     height: 100px;
     box-shadow: 0px 1px 5px;
@@ -23,6 +24,10 @@
 #menu-container #menu>ul>li>#QLKD{
     width: 297px;
 }
+#menu-container #menu>ul>li>a>i{
+    font-size: 50px;
+    line-height: 70px;
+}
 #menu-container #menu>ul>li>ul>li>a{
     height: 50px;
     text-align: center;
@@ -32,6 +37,7 @@
 #menu-container #menu>ul>li>#dropdown_xuong>li>a{
     width: 210px;
 }
+
 
 /*---------------------------main---------------------------*/
 
