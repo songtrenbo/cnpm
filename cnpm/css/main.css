@@ -33,7 +33,6 @@
 #menu-container #menu>ul>li>#dropdown_xuong>li>a{
     width: 210px;
 }
-
 /*---------------------------main---------------------------*/
 
 main{
@@ -42,34 +41,14 @@ main{
     padding: 35px 11%;
     padding-top: 35px;
 }
-button{
-    color:black;
-}
-#chitietHD{
-    height: auto;
-    padding: 50px;
-    position: fixed;
-    background: #ffffff;
-}
-#chitietHD ul li{			
-    margin: 0px 400px 10px 0;
-    display: inline-block;
-}
-#chitietHD ul li *{
-    margin-right:10px;
-    display: inline-block;
-}
-a{
-    cursor:pointer;
-}
-
 
 /*---------------------------footer---------------------------*/
+
 
 footer{
     min-height: 250px;
     margin-top: 100px;
-    padding: 35px 11%;
+    padding: 35px 7%;
     background-color: #222222;
     padding-top: 35px;
     color:#FFFFFF;

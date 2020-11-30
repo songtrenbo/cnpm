@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+		integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css"
+		integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+
+	<!-- <script
+		src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.7.14/js/bootstrap-datetimepicker.min.js"></script> -->
+
+	<link rel="stylesheet" href="./css/main.css">
+	<title>Quản lý kho</title>
+	<link rel="icon" href="./picture/icon.png">
+</head>
+
+<body>
+	<header>
+		<nav class="navbar  navbar-fixed-top">
+			<div class="container" id="menu-container">
+			  <div class="navbar-header">
+				<a class="navbar-brand" href="#"> <img src="./picture/FastLeopard.png" alt=""></a>
+			  </div>
+			  <div id="menu" class="collapse navbar-collapse navbar-right">
+				<ul class="nav navbar-nav">
+				  	<li><a href="#">Trang chủ</a></li>
+
+				  	<li class="dropdown">
+						<a href="QLKho.html" id="QL-Kho">Quản lý kho</span></a>
+					</li>
+
+				  	<li class="dropdown">
+						<a href="QLXuong.html">Quản lý xưởng</span></a>
+					</li>
+
+					<li><a href="QLKTTC.html">Quản lý kế toán tài chính</a></li>
+					<li class="dropdown">
+						<a data-toggle="dropdown" href="" id="QLKD">Quản lý kinh doanh <span class="caret"></span></a>
+						<ul class="dropdown-menu navbar">					 
+							<li><a href="QLKD.html">Danh sách hóa đơn sửa ô tô</a></li>
+							<li><a href="DichVu.html">Dịch vụ</a></li>
+						</ul>
+					</li>						
+				</ul>
+			  </div><!--/.nav-collapse -->
+			</div>
+		  </nav>
+	  
+	</header>
+
+
+
+	<main>
+		<div>
+
+			<section>
+				<nav aria-label="breadcrumb">
+					<ul class="breadcrumb justify-content-center">
+						<li class="breadcrumb-item"><a href="Trang-chu.html">Trang chủ</a></li>
+						<li class="breadcrumb-item active" aria-current="page"><a href="#">Quản lý kho</a></li>
+					</ul>
+				</nav>
+				<div class="container">
+					<ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
+						<li class="nav-item active">
+							<a class="nav-link active" id="nhap-tab" data-toggle="tab" href="#nhap-thong-tin-san-pham"
+								role="tab" aria-controls="nhap-thong-tin-san-pham" aria-selected="true">Nhập thông tin
+								sản phẩm mới vào kho</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" id="xem-tab" data-toggle="tab" href="#xem-thong-tin-san-pham" role="tab"
+								aria-controls="xem-thong-tin-san-pham" aria-selected="false">Xem thông tin sảm phẩm
+								trong kho</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" id="thong-bao-tab" data-toggle="tab" href="#san-pham-sap-het" role="tab"
+								aria-controls="san-pham-sap-het" aria-selected="false">Danh sách sản phẩm sắp
+								hết</a>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section>
+				<div class="tab-content container" id="nav-tabContent">
+					<div id="nhap-thong-tin-san-pham" class="tab-pane fade active in" role="tabpanel"
+						aria-labelledby="nav-nhap-tab">
+						<div class="container">
+							<form>
+								<div class="form-group">
+									<!-- <label for="inputDate">Ngày nhập kho:</label>
+									<input type="date" class="form-control"> -->
+									<div style="margin: 10px;"></div>
+									<form>
+										<div class="form-group row">
+											<label for="inputDate" class="col-sm-2 col-form-label">Ngày nhập kho:</label>
+											<div class="col-sm-10">
+												<input type="date" class="form-control" id="inputDate" required>
+											</div>
+										</div>
+										<div class="form-group row">
+											<label for="inputSanPham" class="col-sm-2 col-form-label">Tên sản phẩm:</label>
+											<div class="col-sm-10">
+												<input type="text" class="form-control" id="inputSanPham" required>
+											</div>
+										</div>
+										<div class="form-group row">
+											<label for="inputSoLuong" class="col-sm-2 col-form-label">Số lượng:</label>
+											<div class="col-sm-10">
+												<input type="number" class="form-control" id="inputSoLuong" value="0" min="0">
+											</div>
+										</div>
+										<div class="form-group row">
+											<label for="inputGia" class="col-sm-2 col-form-label">Giá:</label>
+											<div class="col-sm-10">
+												<input type="number" class="form-control" id="inputGia" value="0" min="0" step="1000">
+											</div>
+										</div>
+										<div class="form-group row">
+											<div class="col-sm-10">
+												<button type="submit" class="btn btn-primary">Thêm</button>
+											</div>
+										</div>
+									</form>
+								</div>
+								<!-- <button type="submit" class="btn btn-primary">Thêm</button> -->
+							</form>
+
+						</div>
+					</div>
+
+					<div id="xem-thong-tin-san-pham" class="tab-pane fade" role="tabpanel"
+						aria-labelledby="nav-xem-tab">
+						<div class="container">
+							<table class="table">
+								<thead class="thead">
+									<tr>
+										<th scope="col">STT</th>
+										<th scope="col">Tên sản phẩm</th>
+										<th scope="col">Số lượng</th>
+										<th class="text-center" scope="col">Giá</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th scope="row">1</th>
+										<td>Nhớt Ô Tô cao cấp Motul Multigrade 20W50 4L - NK-Motul-muti-20w50
+										</td>
+										<td class="text-center">15</td>
+										<td>16.600.000 VNĐ</td>
+									</tr>
+									<tr>
+										<th scope="row">2</th>
+										<td>Dầu nhớt tổng hợp cao cấp Castrol Magnatec công nghệ Dualock 10W40 4
+											lít
+											- C10W40 4L
+										</td>
+										<td class="text-center">8</td>
+										<td>1.600.000 VNĐ</td>
+									</tr>
+									<tr>
+										<th scope="row">3</th>
+										<td>Lốp Xe Michelin Energy XM2 195/70R14</td>
+										<td class="text-center">12</td>
+										<td>1.600.000 VNĐ</td>
+									</tr>
+									<tr>
+										<th scope="row">1</th>
+										<td>Nhớt Ô Tô cao cấp Motul Multigrade 20W50 4L - NK-Motul-muti-20w50
+										</td>
+										<td class="text-center">15</td>
+										<td>1.600.000 VNĐ</td>
+									</tr>
+									<tr>
+										<th scope="row">2</th>
+										<td>Dầu nhớt tổng hợp cao cấp Castrol Magnatec công nghệ Dualock 10W40 4
+											lít
+											- C10W40 4L
+										</td>
+										<td class="text-center">8</td>
+										<td>1.600.000 VNĐ</td>
+									</tr>
+									<tr>
+										<th scope="row">3</th>
+										<td>Lốp Xe Michelin Energy XM2 195/70R14</td>
+										<td class="text-center">12</td>
+										<td>1.600.000 VNĐ</td>
+									</tr>
+								</tbody>
+							</table>
+
+							<button type="button" class="btn btn-danger">Xóa</button>
+
+						</div>
+					</div>
+
+					<div id="san-pham-sap-het" class="tab-pane fade" role="tabpanel"
+						aria-labelledby="nav-thong-bao-tab">
+						<table class="table">
+							<thead class="thead">
+								<tr>
+									<th scope="col">STT</th>
+									<th scope="col">Tên sản phẩm</th>
+									<th scope="col">Số lượng còn lại</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row">1</th>
+									<td>Nhớt Ô Tô cao cấp Motul Multigrade 20W50 4L - NK-Motul-muti-20w50</td>
+									<td class="text-center">15</td>
+								</tr>
+								<tr>
+									<th scope="row">2</th>
+									<td>Dầu nhớt tổng hợp cao cấp Castrol Magnatec công nghệ Dualock 10W40 4 lít -
+										C10W40 4L
+									</td>
+									<td class="text-center">8</td>
+								</tr>
+								<tr>
+									<th scope="row">3</th>
+									<td>Lốp Xe Michelin Energy XM2 195/70R14</td>
+									<td class="text-center">12</td>
+								</tr>
+								<tr>
+									<th scope="row">1</th>
+									<td>Nhớt Ô Tô cao cấp Motul Multigrade 20W50 4L - NK-Motul-muti-20w50</td>
+									<td class="text-center">15</td>
+								</tr>
+								<tr>
+									<th scope="row">2</th>
+									<td>Dầu nhớt tổng hợp cao cấp Castrol Magnatec công nghệ Dualock 10W40 4 lít -
+										C10W40 4L
+									</td>
+									<td class="text-center">8</td>
+								</tr>
+								<tr>
+									<th scope="row">3</th>
+									<td>Lốp Xe Michelin Energy XM2 195/70R14</td>
+									<td class="text-center">12</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+				</div>
+			</section>
+
+		</div>
+	</main>
+
+
+	<footer id="myFooter">
+		<div class="container-footer">
+			<div class="row">
+				<div class="col-sm-5" id="footer-col-1">
+					<h5>Gara ô tô Fast Leopard</h5>
+					<ul>
+						<li>Chịu trách nhiệm nội dung: Đinh Tiến Đạt</a></li>
+						<li>Giấy phép MXH số 451/GP-BTTTT do Bộ TTTT cấp ngày 25/09/2020</li>
+						<li>Địa điểm: 155 Sư Vạn Hạnh, Phường 1, Quận 10, TP. HCM</li>
+						<li>Văn phòng: Lầu 3, 57 Cao Thắng, Phường 3, Quận 10, TP. HCM</li>
+						<li>Hotline: 090 44 15677</li>
+						<li>Email: fastleopard@gmail.com</li>
+					</ul>
+				</div>
+				<div class="col-sm-4" id="footer-col-2">
+					<img src="./picture/BoCongThuong.png" alt="">
+				</div>
+				<div class="col-sm-3" id="footer-col-3">
+					<div class="social-networks">
+						<ul>
+							<li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
+							<li><a href="#" class="facebook"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="#"" target=" _blank"><i class="fa fa-youtube-play"></i></a></li>
+							<li><a href="#" class="google"><i class="fa fa-google-plus"></i></a></li>
+						</ul>
+
+
+
+
+					</div>
+					<div class="col-sm" id="footer-col-3__row-1">
+						<ul>
+							<li><a href="#">Trang chủ</a></li>
+							<li><a href="#">Quản lý kho</a></li>
+							<li><a href="#">Quản lý xưởng</a></li>
+							<li><a href="#">Quản lý kế toán tài chính</a></li>
+							<li><a href="#">Quản lý kinh doanh</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-copyright">
+			<p>© 2020 Copyright Fast Leopard </p>
+		</div>
+	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+		integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+		crossorigin="anonymous"></script>
+	<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.7.14/css/bootstrap-datetimepicker.min.css">
+</body>
+
+</html>
