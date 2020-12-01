@@ -18,12 +18,6 @@
     font-size: 25px;
     text-align: center;
 }
-#menu-container #menu>ul>li>#QL-Kho{
-    width: 265px;
-}
-#menu-container #menu>ul>li>#QLKD{
-    width: 297px;
-}
 #menu-container #menu>ul>li>a>i{
     font-size: 50px;
     line-height: 70px;
@@ -33,9 +27,6 @@
     text-align: center;
     line-height: 50px;
     font-size: 20px;
-}
-#menu-container #menu>ul>li>#dropdown_xuong>li>a{
-    width: 210px;
 }
 
 /*---------------------------main---------------------------*/
